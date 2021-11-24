@@ -9,10 +9,10 @@ import { HttpClientModule  } from  '@angular/common/http';
 import { ConverterComponent } from './converter/converter.component';
 import { HistoryComponent } from './history/history.component';
 
-const routes: Routes = [
-  { path: 'converter', component: ConverterComponent },
-  { path: 'history', component: HistoryComponent },
-];
+// const routes: Routes = [
+//   { path: 'converter', component: ConverterComponent },
+//   { path: 'history', component: HistoryComponent },
+// ];
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes),
+    // RouterModule.forRoot(routes),
     ReactiveFormsModule,
     HttpClientModule 
   ],

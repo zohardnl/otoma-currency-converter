@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ConvertService } from '../services/convert.service';
 import { HistoryService } from '../services/history.service';
@@ -6,9 +6,10 @@ import { HistoryService } from '../services/history.service';
 @Component({
   selector: 'app-converter',
   templateUrl: './converter.component.html',
-  styleUrls: ['./converter.component.scss']
+  styleUrls: ['./converter.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ConverterComponent{
+export class ConverterComponent {
 
   currencyForm = new FormGroup({
     sum: new FormControl(''),
