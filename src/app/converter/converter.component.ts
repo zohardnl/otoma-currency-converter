@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ConvertService } from '../services/convert.service';
-import { HistoryService } from '../services/history.service';
 
 @Component({
   selector: 'app-converter',
