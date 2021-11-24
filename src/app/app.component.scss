@@ -1,0 +1,14 @@
+
+:host {
+  display: block;
+  .header {
+    display: flex;
+    background-color: #0ff1f1;
+    .tab {
+      padding: 10px;
+      &:hover {
+        background-color: #e21e59;
+      }
+    }
+  }
+}
