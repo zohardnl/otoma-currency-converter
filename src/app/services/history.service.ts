@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class HistoryService {
   constructor() { }
+
   setToLocalStorage(key: string, value: string){
     localStorage.setItem(key, value);
   }
