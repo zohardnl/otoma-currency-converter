@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  host: 'api.frankfurter.app'
+  host: 'https://api.frankfurter.app'
 };
 
 /*
