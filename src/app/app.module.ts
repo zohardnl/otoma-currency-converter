@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule  } from  '@angular/common/http';
 import { ConverterComponent } from './converter/converter.component';
 import { HistoryComponent } from './history/history.component';
 
@@ -16,12 +14,9 @@ import { HistoryComponent } from './history/history.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   exports: [RouterModule],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

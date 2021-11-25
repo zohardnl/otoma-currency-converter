@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-converter',
@@ -8,12 +7,6 @@ import { FormControl, FormGroup } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConverterComponent {
-
-  currencyForm = new FormGroup({
-    sum: new FormControl(''),
-    fromCurrency: new FormControl(''),
-    toCurrency: new FormControl(''),
-  });
 
   public currenciesCodes: string[] = [
     'ILS',

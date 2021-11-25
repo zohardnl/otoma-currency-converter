@@ -1,15 +1,14 @@
-<form [formGroup]="currencyForm">
+<form>
     <h2>Currency Converter</h2>
-    <input id="sum" type="text" formControlName="sum">
+    <input id="amount" type="number">
     <label for="fromCurrency">From: </label>
 
-    <select id="fromCurrency" class="custom-select" formControlName="fromCurrency">
+    <select id="fromCurrency" class="custom-select">
         <option *ngFor="let code of currenciesCodes" >{{code}}</option>
      </select>
 
     <label for="toCurrency">To: </label>
-    <select id="toCurrency" class="custom-select" formControlName="toCurrency">
+    <select id="toCurrency" class="custom-select">
         <option *ngFor="let code of currenciesCodes" >{{code}}</option>
      </select>
-
 </form>
