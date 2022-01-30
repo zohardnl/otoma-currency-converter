@@ -11,6 +11,7 @@ export class HistoryComponent implements OnInit {
 
   constructor(private historyService: HistoryService) { }
   historyValues : any;
+
   ngOnInit(): void {
     this.historyValues = this.historyService.getLocalStorage();
   }

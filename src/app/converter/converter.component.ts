@@ -24,8 +24,5 @@ export class ConverterComponent {
     'RUB'
   ];
 
-  constructor() { }
-
-
-
+  constructor() {}
 }
