@@ -1,9 +1,7 @@
 .header {
   background-color: #0ff1f1;
 
-  .tab {
-    padding: 0 10px;
-
+  &__tab {
     &:hover {
       opacity: 0.7;
     }
