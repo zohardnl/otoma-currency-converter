@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 export class HistoryService {
   constructor() {}
 
-  setToLocalStorage(key: string, value: string){
-    localStorage.setItem(key, value);
+  setToLocalStorage(value: string){
+    localStorage.setItem('currencyHistory', value);
   }
 
   getLocalStorage(){

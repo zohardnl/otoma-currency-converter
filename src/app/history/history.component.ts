@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { HistoryService } from '../services/history.service';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {HistoryService} from '../services/history.service';
 
 @Component({
   selector: 'app-history',
@@ -9,8 +9,10 @@ import { HistoryService } from '../services/history.service';
 })
 export class HistoryComponent implements OnInit {
 
-  constructor(private historyService: HistoryService) { }
-  historyValues : any;
+  constructor(private historyService: HistoryService) {
+  }
+
+  historyValues: unknown;
 
   ngOnInit(): void {
     this.historyValues = this.historyService.getLocalStorage();
